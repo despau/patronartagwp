@@ -5,7 +5,7 @@
         <main id="main" class="site-main" role="navigation">
 
             <h1>
-                <?php esc_html_e( 'Searching For: ', 'patronarchy'); ?>
+                <?php esc_html_e( 'Searching For: ', 'patronartag'); ?>
                 <?php echo get_search_query(); ?>
             </h1>
 

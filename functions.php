@@ -27,21 +27,21 @@ add_theme_support( 'starter-content' );
 
 
 //Load in our CSS
-function patronarchy_enqueue_styles() {
+function patronartag_enqueue_styles() {
     wp_enqueue_style( 'varela-font-css', 'https://fonts.googleapis.com/css?family=Varela+Round', [], '', 'all' );
     wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', ['varela-font-css'], time(), 'all' );
     wp_enqueue_style( 'custom-css', get_stylesheet_directory_uri() . '/assets/css/custom-style.css', ['main-css'], time(), 'all' );
 }
-add_action( 'wp_enqueue_scripts', 'patronarchy_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'patronartag_enqueue_styles' );
 
 
 // Load in our JS
-function patronarchy_enqueue_scripts() {
+function patronartag_enqueue_scripts() {
 
   wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', [], time(), true );
 
 }
-add_action( 'wp_enqueue_scripts', 'patronarchy_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'patronartag_enqueue_scripts' );
 
 
 
@@ -52,36 +52,36 @@ register_nav_menus([
 
 
 // Setup Widget Areas
-function patronarchy_widgets_init() {
+function patronartag_widgets_init() {
     register_sidebar([
-      'name'          => esc_html__( 'Main Sidebar', 'patronarchy' ),
+      'name'          => esc_html__( 'Main Sidebar', 'patronartag' ),
       'id'            => 'main-sidebar',
-      'description'   => esc_html__( 'Add widgets for main sidebar here', 'patronarchy' ),
+      'description'   => esc_html__( 'Add widgets for main sidebar here', 'patronartag' ),
       'before_widget' => '<section class="widget">',
       'after_widget'  => '</section>',
       'before_title'  => '<h2 class="widget-title">',
       'after_title'   => '</h2>',
     ]);
     register_sidebar([
-      'name'          => esc_html__( 'Page Sidebar', 'patronarchy' ),
+      'name'          => esc_html__( 'Page Sidebar', 'patronartag' ),
       'id'            => 'page-sidebar',
-      'description'   => esc_html__( 'Add widgets for page sidebar here', 'patronarchy' ),
+      'description'   => esc_html__( 'Add widgets for page sidebar here', 'patronartag' ),
       'before_widget' => '<section class="widget">',
       'after_widget'  => '</section>',
       'before_title'  => '<h2 class="widget-title">',
       'after_title'   => '</h2>',
     ]);
     register_sidebar([
-      'name'          => esc_html__( 'Front Page Widgets', 'patronarchy' ),
+      'name'          => esc_html__( 'Front Page Widgets', 'patronartag' ),
       'id'            => 'front-page',
-      'description'   => esc_html__( 'Add widgets for the front page here', 'patronarchy' ),
+      'description'   => esc_html__( 'Add widgets for the front page here', 'patronartag' ),
       'before_widget' => '<section class="widget">',
       'after_widget'  => '</section>',
       'before_title'  => '<h2 class="widget-title">',
       'after_title'   => '</h2>',
     ]);
   }
-  add_action( 'widgets_init', 'patronarchy_widgets_init' );
+  add_action( 'widgets_init', 'patronartag_widgets_init' );
 
 
 

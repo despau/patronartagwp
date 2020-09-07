@@ -28,7 +28,7 @@
 
                         <p>
                             <a class='button' href="<?php the_field( 'url' ); ?>">
-                                <?php esc_html_e( 'Visit the Site', 'patronarchy'); ?>
+                                <?php esc_html_e( 'Visit the Site', 'patronartag'); ?>
                             </a>
                         </p>
 
