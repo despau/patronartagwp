@@ -14,7 +14,9 @@
     
     <div class="entry-content">
 
-        <?php the_excerpt( '<p>', '</p>' ); ?>
+        <?php the_content( ); ?>
+        
+        <p>template: content-posts.php</p>
 
     </div>
 

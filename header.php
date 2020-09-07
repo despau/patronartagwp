@@ -31,7 +31,8 @@
       <nav id="site-navigation" class="main-navigation" role="navigation">
         <?php
           $args = [
-            'theme_location' => 'main-menu'
+            'theme_location' => 'main-menu',
+            'container' => 'nav'
           ];
           wp_nav_menu( $args );
         ?>

@@ -14,9 +14,26 @@
     
     <div class="entry-content">
 
-        <?php the_content( '<p>', '</p>' ); ?>
+        <?php
+            if( has_post_thumbnail(  )):
+            return;
+            endif;
+        else: 
+            $attr = [
+                'class' => 'img featured augustin',
+                'title' => get_the_title(),
+                'alt' => get_the_title() . 'Alt'
+            ];
+
+            the_post_thumbnail('thumbnail', $attr);
+        ?>
+        
+        <?php the_content('Read more ..!'); ?>
+
 
     </div>
+
+    <p>template: content.php</p>
 
     <?php if ( comments_open( ) ) : comments_template(); endif; ?>
 

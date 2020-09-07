@@ -20,7 +20,7 @@
 
         </main><!-- #main -->
 
-        <h5>template: Home.php (for homepage (blog page))</h5>
+        <h5>template: Home.php (blog page)[content-posts]</h5>
     </div><!-- #primary -->
     
     <!-- secondary -->
