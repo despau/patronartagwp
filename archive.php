@@ -5,7 +5,6 @@
         <main id="main" class="site-main" role="navigation">
 
             <h1><?php the_archive_title(); ?></h1>
-            <!-- <p><?php the_archive_description(); ?></p> -->
 
             <?php if (have_posts() ) : while (have_posts() ) : the_post();
                 
@@ -18,6 +17,7 @@
             endif; ?>
 
             <?php echo paginate_links(); ?>
+            
 
         </main><!-- #main -->
 

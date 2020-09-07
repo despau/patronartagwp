@@ -236,6 +236,8 @@ article.post {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .home #secondary .widget {

@@ -6,6 +6,7 @@
 
             <h1><?php the_archive_title(); ?></h1>
             <p><?php echo category_description(); ?></p>
+            <h2><?php single_term_title( 'Current cat: ' ); ?></h2>
             <hr>
 
             <?php if (have_posts() ) : while (have_posts() ) : the_post();

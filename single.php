@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
     <div id="primary" class="content-area">
+    
+            <!-- post_title() demo outside of the loop -->
+            <h2><?php single_post_title( 'Current post: ' ); ?></h2>
 
         <main id="main" class="site-main" role="navigation">
             <?php if (have_posts() ) : while (have_posts() ) : the_post();
