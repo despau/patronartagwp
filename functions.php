@@ -48,6 +48,18 @@ function patronartag_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'patronartag_enqueue_scripts' );
 
 
+//our own hook wphooks_before_footer
+// to display custom footer message
+function wphooks_before_footer_message() {
+
+  // echo '<p>My custom footer text message rawwg!</p>';
+  locate_template( 'template-parts/before-footer.php', true);
+
+}
+add_action( 'wphooks_before_footer', 'wphooks_before_footer_message', 10);
+// remove_action( 'wphooks_before_footer', 'wphooks_before_footer_message', 10);
+
+
 
 //Register Menu Locations
 register_nav_menus([
