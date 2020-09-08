@@ -15,7 +15,9 @@
 
         </main><!-- #main -->
 
-        <h5>template: Page-1077</h5>
+        <h5>template: Page-1077 (page comments)</h5>
+
+        
     </div><!-- #primary -->
     
 

@@ -12,6 +12,10 @@
              endwhile; endif; ?>
 
             <h5>template: Page</h5>
+
+            <pre><?php var_dump( $wp_actions[ 'setup_theme' ] ); ?></pre>
+
+            <pre><?php var_dump( $wp_filter[ 'wp_enqueue_scripts' ] ); ?></pre>
         </main><!-- #main -->
 
         
