@@ -62,6 +62,10 @@ add_action( 'wphooks_before_footer', 'wphooks_before_footer_message', 10);
 
 function wphooks_loop_end_marketing() {
 
+  if( !in_the_loop() ) return;
+
+  echo "TEST!!!!";
+
   locate_template( 'template-parts/post-end-marketing.php', true);
 
 }
