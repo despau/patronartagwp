@@ -3,7 +3,7 @@
 
         <footer id="colophon" class="site-footer" role="contentinfo">
 
-            <!-- our own hook -->
+            <!-- calling our own hook -->
             <?php do_action( 'wphooks_before_footer' ); ?>
 
             <h3><?php  bloginfo('name'); ?></h3>    

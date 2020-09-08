@@ -45,7 +45,7 @@ function patronartag_enqueue_scripts() {
   wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', [], time(), true );
 
 }
-add_action( 'wp_enqueue_scripts', 'patronartag_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'patronartag_enqueue_scripts' ); //default priority is 10
 
 
 //our own hook wphooks_before_footer
