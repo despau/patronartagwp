@@ -72,6 +72,21 @@ function wphooks_loop_end_marketing() {
 add_action( 'loop_end', 'wphooks_loop_end_marketing', 10);
 
 
+function wphooks_members_logged_out_redirect() {
+
+  if( is_page( 'mymembers' ) && ! is_user_logged_in() ) {
+    wp_redirect( home_url( '/mysign-up/' ) );
+    die;
+  }
+  if( is_page( 'mysign-up' ) &&  is_user_logged_in() ) {
+    wp_redirect( home_url( '/mymembers/' ) );
+    die;
+  }
+  
+}
+add_action( 'template_redirect', 'wphooks_members_logged_out_redirect', 10);
+
+
 
 //Register Menu Locations
 register_nav_menus([
