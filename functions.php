@@ -26,6 +26,10 @@ add_theme_support( 'custommized-selective-refresh-widgets' );
 add_theme_support( 'starter-content' );
 
 
+// Include R Debug
+require( dirname(__FILE__) . '/lib/r-debug.php' );
+
+
 //Load in our CSS
 function patronartag_enqueue_styles() {
     wp_enqueue_style( 'varela-font-css', 'https://fonts.googleapis.com/css?family=Varela+Round', [], '', 'all' );

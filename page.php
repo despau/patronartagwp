@@ -13,9 +13,11 @@
 
             <h5>template: Page</h5>
 
-            <pre><?php var_dump( $wp_actions[ 'setup_theme' ] ); ?></pre>
+            <?php 
+                R_Debug::list_hooks( 'wp_enqueue_scripts' );
+                // R_Debug::list_live_hooks();
+            ?>
 
-            <pre><?php var_dump( $wp_filter[ 'wp_enqueue_scripts' ] ); ?></pre>
         </main><!-- #main -->
 
         
