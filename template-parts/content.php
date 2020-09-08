@@ -14,11 +14,10 @@
     
     <div class="entry-content">
 
-        <?php
+        <!-- <?php
             if( has_post_thumbnail(  )):
-            return;
+                return;
             endif;
-        else: 
             $attr = [
                 'class' => 'img featured augustin',
                 'title' => get_the_title(),
@@ -26,7 +25,7 @@
             ];
 
             the_post_thumbnail('thumbnail', $attr);
-        ?>
+        ?> -->
         
         <?php the_content('Read more ..!'); ?>
 

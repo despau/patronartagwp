@@ -7,7 +7,10 @@
         <?php the_title( '<h2><a href=" '. esc_url(get_permalink()) .' ">', '</a></h2>' ); ?>
 
         <div class="byline">
-            <?php esc_html_e( 'Author: ', 'patronarchy' ); the_author_posts_link(); ?>
+            <?php 
+                esc_html_e( 'Author: ', 'patronarchy' ); the_author_posts_link(); 
+                // the_author_meta('user_email'); 
+            ?>
         </div>
 
     </header>

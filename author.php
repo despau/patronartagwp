@@ -7,8 +7,14 @@
             <div class="author-bio">
                 <h1><?php the_archive_title(); ?></h1>
                 <p>
-                    <?php echo the_author_meta( 'description', $post->post_autor ); ?>
+                    <?php the_author_meta( 'description', $post->post_autor ); ?>
                 </p>
+                
+                <?php wp_list_authors(); ?>
+
+                <p><a href="<?php esc_url( bloginfo('home')); ?>">
+                    <?php the_author_meta( 'email', $post->post_autor ); ?>
+                </a></p>
             </div>
 
             
