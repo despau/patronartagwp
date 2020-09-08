@@ -10,3 +10,5 @@
     </div>
 <p><em>template: content-page</em></p>
 </article>
+
+<?php do_action( 'loop_end' ); ?>

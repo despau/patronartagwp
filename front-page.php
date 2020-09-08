@@ -10,8 +10,10 @@
              endwhile;  else : ?>          
                 
                 <?php get_template_part( 'template-parts/content', 'none' );
+                
             
             endif; ?>
+
             <h5>template: Front-Page (for your homepage)</h5>
         </main><!-- #main -->
 

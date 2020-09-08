@@ -60,6 +60,14 @@ add_action( 'wphooks_before_footer', 'wphooks_before_footer_message', 10);
 // remove_action( 'wphooks_before_footer', 'wphooks_before_footer_message', 10);
 
 
+function wphooks_loop_end_marketing() {
+
+  locate_template( 'template-parts/post-end-marketing.php', true);
+
+}
+add_action( 'loop_end', 'wphooks_loop_end_marketing', 10);
+
+
 
 //Register Menu Locations
 register_nav_menus([
